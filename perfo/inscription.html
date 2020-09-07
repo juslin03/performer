@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <center>
+                <a href="/" style="font-size: larger;">Cliquez ici pour aller a la page accueil</a>
+                <div class="alert alert-success" id='alertSuccess' role="alert">
+                Success
+                </div>
+            </center>
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/signup-img.jpg" alt="">
+                    <div class="signup-img-content">
+                        <h2>Formulaire d'inscription </h2>
+                        <p>Inscrivez-vous en un clic !</p>
+                    </div>
+                </div>
+                <div class="signup-form">
+                    <form class="register-form" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="nom" class="required">Nom</label>
+                                    <input type="text" name="nom" id="nom" placeholder="Votre nom" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="prenom" class="required">Prenom</label>
+                                    <input type="text" name="prenom" id="prenom" placeholder="Votre prenom" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="nais" class="required">Date de naissance</label>
+                                    <input type="date" name="datenaissance" id="datenaissance" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Votre email" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone" class="required">Numero de telephone</label>
+                                    <input type="tel" name="phone" id="phone" placeholder="Votre numero de telephone" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="commune">Commune</label>
+                                    <input type="text" name="commune" id="commune" placeholder="Votre commune" />
+                                </div>
+                                <div class="form-input">
+                                    <div class="label-flex">
+                                        <label for="suivre">Que souhaitez-vous ?</label>
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="form_survey" class="form_survey" value="Suivre la formation" id="suivre">
+                                            <label for="suivre">Suivre la formation</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="form_survey" class="form_survey" value="Etre sélectionné pour un accompagnement" id="N">
+                                            <label for="N">Etre sélectionné pour un accompagnement</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <!-- <div class="form-radio-item">
+                                            <input type="radio" name="payment" id="demand">
+                                            <label for="demand">Demand Draf</label>
+                                            <span class="check"></span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-select">
+                                    <div class="label-flex">
+                                        <label for="genre">Sexe</label>
+                                        <!-- <a href="#" class="form-link">Lunch detail</a> -->
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="genre" class="genre" value="M" id="M">
+                                            <label for="M">Masculin</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="genre" class="genre" value="F" id="F">
+                                            <label for="F">Feminin</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="survey">Avez-vous un projet?</label>
+                                        <!-- <a href="#" class="form-link">Payment Detail</a> -->
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="projet_survey" class="projet_survey" value="Oui" id="Oui">
+                                            <label for="Oui">Oui</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="projet_survey" class="projet_survey" value="Non" id="Non">
+                                            <label for="Non">Non</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="nomprojet">Nom du projet</label>
+                                    <input type="text" name="nomprojet" id="nomprojet" placeholder="Le nom de votre projet ici" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="activity">decrivez votre activité</label>
+                                    <textarea name="activity" id="activity" cols="30" rows="5" placeholder="Votre message ici"></textarea>
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="payment">Maitrise de l'outil informatique</label>
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="tic_survey" class="tic_survey" value="Debutant" id="debutant">
+                                            <label for="debutant">Débutant</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="tic_survey" class="tic_survey" value="Experimente" id="expert">
+                                            <label for="expert">Expérimenté</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <!-- <div class="form-radio-item">
+                                            <input type="radio" name="tic_survey" id="amis">
+                                            <label for="amis">Amis</label>
+                                            <span class="check"></span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="lien">Lien de page Facebook</label>
+                                    <input type="url" name="lien" id="lien" placeholder="Le lien ici" />
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="reseaux">Comment avez-vous été informé.e?</label>
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="info_survey" class="info_survey" value="reseaux sociaux" id="reseaux">
+                                            <label for="reseaux">Reseaux sociaux</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="info_survey" class="info_survey" value="site web" id="site">
+                                            <label for="site">Site web</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="info_survey" class="info_survey" value="amis" id="amis">
+                                            <label for="amis">Amis</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="donate-us">
+                            <label>Donate us</label>
+                            <div class="price_slider ui-slider ui-slider-horizontal">
+                                <div id="slider-margin"></div>
+                                <span class="donate-value" id="value-lower"></span>
+                            </div>
+                        </div> -->
+                        <div class="form-submit">
+                            <input type="submit" value="Valider" class="submit" id="submitBtn" name="submit" />
+                            <!-- <input type="submit" value="Annuler" class="submit" id="reset" name="reset" /> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="vendor/nouislider/nouislider.min.js" type="text/javascript"></script>
+    <script src="vendor/wnumb/wNumb.js" type="text/javascript"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery-validation/additional-methods.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/form.js" type="text/javascript" async></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="309980634fd5d9be1ce7a70a-|49" defer=""></script>
+</body>
+
+</html>
